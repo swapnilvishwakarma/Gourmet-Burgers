@@ -136,14 +136,36 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-
+                    <h5 class="modal-title">Sign up for exclusive offers!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
-
+                    <form>
+                        <div class="form-group">
+                            <label for="nameInput">Your Name</label>
+                            <input type="text" class="form-control" id="nameInput" placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="emailInput">Your Email</label>
+                            <input type="email" class="form-control" id="emailInput" placeholder="Enter your email">
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Your Address</label>
+                            <textarea class="form-control" id="address" rows="3" placeholder="Enter your email"></textarea>
+                        </div>
                 </div>
-                <div class="modal-footer">
-
+                <div class="modal-footer justify-content-between">
+                    <div class="form-check for-check-inline">
+                        <input type="checkbox" class="form-check-input" id="emailCheck" value="option1">
+                        <label class="form-check-label" for="emailCheck">Contact by email?</label>
+                    </div>
+                    <div class="form-check for-check-inline">
+                        <input type="checkbox" class="form-check-input" id="postCheck" value="option1">
+                        <label class="form-check-label" for="postCheck">Contact by post?</label>
+                    </div>
+                    <button type="button" class="btn btn-primary">Submit</button>
                 </div>
+            </form>
             </div>
         </div>
     </div>
